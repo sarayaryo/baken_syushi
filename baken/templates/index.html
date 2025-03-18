@@ -1,4 +1,80 @@
 <!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Web上で馬券の記録・収支の分析が出来るサービス|Baken Syushi {% endblock%}
+
+{% block header%}
+
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+            <h1 class="masthead-heading mb-0">Baken Syushi</h1>
+            <h2 class="masthead-subheading mb-0">馬券の記録・収支の分析</h2>
+            <a href="#" class="btn btn-primary btn-x1 rounded-pill mt-5">LOG iN</a>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+{% endblock%}
+
+{% block contents %}
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <h2 class="display-4">Web Baken Kun</h2>
+                    <p>Web上で馬券の記録・収支の分析</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <img class="img-fluid rounded-circle" src="{% static 'assets/img/02.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Save your Report</h2>
+                    <p>あなたの馬券をWebに保存</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <!-- need space after static -->
+                    <img class="img-fluid rounded-circle" src="{% static 'assets/img/03.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <h2 class="display-4">MemberShip</h2>
+                    <p>会員登録制</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock%}
+
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
