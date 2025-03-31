@@ -17,8 +17,24 @@
             "django": true,
             "env":{
                 "DB_USER":"postgres",
-                "DB_PASSWORD":"33ge0602"
+                "DB_PASSWORD":"33ge0602",
+                "DJANGO_SETTINGS_MODULE":"baken_syushi.settings_dev"
 
+            }
+        },
+        {
+            "name": "makemigrations",
+            "type":"debugpy",
+            "request":"launch",
+            "program":"${workspaceFolder}/manage.py",
+            "args": [
+                "makemigrations"
+            ],
+            "django":true,
+            "env":{
+                "DB_USER": "postgres",
+                "DB_PASSWORD": "33ge0602",
+                "DJANGO_SETTINGS_MODULE": "baken_syushi.settings_dev"
             }
         }
     ]
